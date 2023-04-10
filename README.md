@@ -1,16 +1,9 @@
-# WindowsOffender-stealth information gathering tool
+# WindowsOffender, stealth information gathering tool
 #POC  
-I wrote a nice malware in c that is capeable to destroy windows security. it involves a fresh privilege escelation exploit that i found, lsass dumper, reverse shell, keylogging, iat hooking, hollowing, dll injection and more!!
-please note that im updating it almost daily and some of the versions wont be fully completed!
-!!!!note that ive created it for educational puprposes only! DO NOT USE FOR ANY HARM!!!!
+I have developed a malware program using the C programming language, which includes various malicious features such as privilege escalation exploit, lsass dumper, reverse shell, keylogging, IAT hooking, DLL injection, and more. It should be noted that the program is constantly being updated, and some versions may not be fully functional.
 
-The malware metodology is:
-1. UAC bypassing on win10, then becoming an admin silently.
-2. Injecting our whole pe image into to runtime broker so that our process will be hollowed
-3. Hooking the antivirus ReadFile, NtCreateFile and more(you can add the hooking functions in the hookerdll file)
-4. creating a socket with the c&c server ad starting revese shell
-5. running arbitary commands
-6. dumping lsass, and parsing its memoey with mimikatz on our host machine
-7. starting keylogging
-8. now you can combine the options. for example you can get a process's pid and inject it a shellcode remotely-remotely(a remote process from a remote server :)
-9. do not use for any harm! this is only a proof of concept and i built it for educational purposes only. beware with the malware cause it is truely dangerous and works completely flawlessly on the newest windows versions!!
+The malware's methodology involves several steps, including UAC bypassing on Windows 10 to gain administrative privileges, injecting the entire PE image into the runtime broker for process hollowing, hooking antivirus functions, creating a socket with a C&C server, starting a reverse shell, executing arbitrary commands, dumping lsass and parsing its memory with Mimikatz, and enabling keylogging.
+
+Furthermore, these features can be combined, such as injecting a shellcode remotely into a process's PID from a remote server. It is essential to emphasize that this program is intended for educational purposes only and must not be used for any harmful or malicious activities.
+
+In conclusion, the malware created is capable of causing significant damage to Windows security and can operate efficiently on the latest Windows versions. It is critical to note that the use of this program for any malicious purposes is strictly prohibited and unlawful.
